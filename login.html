@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- left css -->
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+
+    .sec-6 {
+        padding-top: 120px;
+        background-color: #0b121f !important;
+        height: 250vh;
+        color: white;
+        display: flex;
+        position: relative;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body {
+        background-color: #0b121f !important;
+    }
+
+    .sec-6div {
+        width: 85%;
+        background-color: #0b121f !important;
+        height: 100%;
+        color: white;
+        display: flex;
+        padding-bottom: 30px;
+        align-items: center;
+        position: relative;
+        z-index: 5;
+        display: flex;
+        position: relative;
+        gap: 30px;
+
+    }
+
+
+    .leftlogin {
+        width: 50%;
+        gap: 20px;
+        height: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.329);
+        border-radius: 10px;
+        padding: 40px;
+        background: linear-gradient(120deg, #102142);
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+  animation: lef 2s 1;
+
+    }
+
+    @keyframes lef{
+
+0%{
+    transform: translateX(-3000px);
+}
+
+
+100%{
+    transform: translateX(0px);
+}
+
+
+
+    }
+
+
+    .rightlogin {
+        background: linear-gradient(120deg, #102142);
+        width: 40%;
+        gap: 10px;
+        padding: 40px;
+        height: 85%;
+        border: 1px solid rgba(255, 255, 255, 0.329);
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        position: fixed;
+        right: 110px;
+        top: 120px;
+        border-radius: 10px;
+        animation: rit 2s 1;
+    }
+
+      @keyframes rit{
+
+0%{
+    transform: translateX(3000px);
+}
+
+
+100%{
+    transform: translateX(0px);
+}
+
+
+
+    }
+
+    .library-1 {
+        width: 80%;
+        height: 10%;
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        flex-direction: column;
+
+        border-radius: 10px;
+    }
+
+    .library-2 span {
+        position: relative;
+        /* transform: rotate(-90deg); */
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .library-2 {
+        cursor: pointer;
+        width: 95%;
+        height: 15vh;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.338);
+        border-radius: 10px;
+    }
+
+    .loginmainhead {
+        font-size: 60px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .loginmainheadp {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.658);
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .library-1 h3 {
+
+        font-size: 16px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .library-1 p {
+
+        font-size: 15px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.916);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+    .library-3 span {
+        position: relative;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        /* transform: rotate(-90deg); */
+        justify-content: center;
+
+    }
+
+
+
+
+    .library-3 {
+        cursor: pointer;
+        width: 95%;
+        align-items: center;
+        height: 5vh;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.332);
+        border-radius: 10px;
+    }
+
+    .library-3 h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.689);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* animATION */
+
+    .library-3 span hr {
+
+
+        position: absolute;
+        top: 15px;
+        left: 34px;
+
+        height: 2px;
+        border: none;
+        border-top: 3px solid rgba(153, 255, 0, 0);
+        width: 0px;
+
+    }
+
+    .library-3:hover h1 {
+        color: rgb(153, 255, 0);
+    }
+
+    .library-3:hover hr {
+        transition: 1s;
+        transform-origin: right;
+        border-top: 3px solid rgb(153, 255, 0);
+        width: 20px;
+        cursor: pointer;
+    }
+
+
+    .library-2 span hr {
+
+        position: absolute;
+        top: 46.1px;
+        left: 34px;
+        height: 2px;
+        border: none;
+        border-top: 3px solid rgba(153, 255, 0, 0);
+        width: 0px;
+
+
+
+    }
+
+    .library-2:hover h1 {
+        color: rgb(170, 255, 0);
+    }
+
+
+    .library-2:hover hr {
+        cursor: pointer;
+        border: none;
+        border-top: 3px solid rgb(153, 255, 0);
+        width: 20px;
+        transition: 1s;
+        transform-origin: top;
+
+
+    }
+
+
+    /* scroll imges start */
+
+    .scrol2 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: linear-gradient(120deg, #102142);
+        height: 10vh;
+        z-index: 5;
+
+
+    }
+
+
+
+    .imges2scroll2 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        background: linear-gradient(120deg, #102142);
+        height: 10vh;
+        gap: 90px;
+        overflow: hidden;
+
+    }
+
+    .imges2scroll2 img {
+        /* opacity: 0.7; */
+        width: 100px;
+        height: 100px;
+        animation: imgscroll 60s linear infinite;
+    }
+
+
+    @keyframes imgscroll {
+
+        0% {
+            transform: translateX(0px);
+        }
+
+        100% {
+            transform: translateX(-8000px);
+        }
+    }
+
+
+
+
+
+    /* scroll imges  end */
+
+
+    .labeloginmain {
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .labellogin {
+        border-radius: 20px;
+        width: 80%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(170, 255, 0, 0.122);
+        color: rgb(170, 255, 0);
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 530;
+    }
+
+    .cardsloginmain {
+        padding: 20px;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 45px;
+        height: 20%;
+        padding: 20px;
+        border: 1px solid rgba(0, 140, 255, 0.441);
+        background: linear-gradient(120deg, #0c1424);
+        border-radius: 20px;
+    }
+
+    .cardsloginmain h1 {
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+
+    .cardlogin1 p {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+
+    }
+
+    .cardsloginmain img {
+        width: 30%;
+    }
+
+    .cardslogin {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .cardlogin1 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 30%;
+    }
+
+    .footer-bottomleft2 {
+        width: 90%;
+        justify-content: space-between;
+        height: 5%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .footer-bottomleft2 img {
+        width: 40px;
+        height: 40px;
+        border: none;
+    }
+
+    .medialogo {
+        width: 40px;
+        height: 40px;
+
+    }
+</style>
+<!-- left css -->
+<!-- right css -->
+<style>
+    .rightlogin h1 {
+        font-size: 33px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    .rightlogin p {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.656);
+    }
+
+    .rightlogin p a {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.656);
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 90%;
+
+    }
+
+    form input {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.255);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    form select {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.255);
+        border-radius: 10px;
+        border: none;
+        color: rgba(255, 255, 255, 0.481);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    form select option {
+        background-color: rgb(21, 22, 44);
+        color: rgba(255, 255, 255, 0.632);
+    }
+
+
+
+
+    form textarea {
+        height: 30%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.255);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .twoinp {
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .twoinp input {
+        width: 50%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.255);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btnlogin a {
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+
+
+    }
+
+    .btnlogin {
+        border: none;
+        background-color: rgb(170, 255, 0);
+        height: 15%;
+        border-radius: 10px;
+
+
+    }
+
+    .btnlogin:hover {
+
+        background-color: rgba(184, 237, 78, 0.873);
+        cursor: pointer;
+
+    }
+</style>
+
+<!-- right css -->
+
+<body>
+
+
+    <nav>
+
+        <div class="logo"><img src="./Samir Bhoir-story.png" alt="">
+
+        </div>
+        <ul class="nav-ul
+">
+            <li class="li-hov"><a class="li-a" href="./index.html">Product</a> </li>
+            <li class="li-hov"><a class="li-a" href="">Solution</a></li>
+            <li class="li-hov"><a class="li-a" href="">Resorces</a></li>
+            <li class="li-hov"><a class="li-a" href="">Company</a></li>
+            <li class="li-hov"><a class="li-a" href="">Price</a></li>
+
+        </ul>
+
+        <div class="right-sec">
+
+            <p class="li-hov">Business</p>
+            <hr>
+            <p class="li-hov">Login</p>
+            <button class="nav-btn">Get Started</button>
+
+        </div>
+        </div>
+
+        <div class="hamb" id="hamb" onclick="openmobi()">
+
+            <span id="a"></span>
+            <span id="b"></span>
+            <span id="c"></span>
+
+            <ul class="mobi-ul" id="mobi">
+
+                <li class="li-hov"><a class="li-a" href="" style="margin-top: 30px;">Product</a> </li>
+                <hr>
+                <li class="li-hov"><a class="li-a" href="">Solution</a></li>
+                <hr>
+                <li class="li-hov"><a class="li-a" href="">Resorces</a></li>
+                <hr>
+                <li class="li-hov"><a class="li-a" href="">Company</a></li>
+                <hr>
+                <li class="li-hov"><a class="li-a" href="">Price</a></li>
+                <hr>
+
+            </ul>
+        </div>
+    </nav>
+
+    <section class="sec-6">
+
+        <div class="sec-6div">
+            <div class="leftlogin">
+
+                <h1 class="loginmainhead">The #1 platform to build attack-ready team and orgnization</h1>
+
+                <p class="loginmainheadp">Maximum curriculum Management flexibility,enhanced skills reporting, and
+                    engaging gamification
+                    features. Book a demo to see Hack The Box in action! </p>
+
+                <div class="library-2">
+
+                    <div class="library-1">
+
+                        <h3>Unmached content library</h3>
+
+                        <p>1500+ Learning paths,courses,hands-on labs,and Certifications covering offensive & defensive
+                            security domains.</p>
+                    </div>
+
+                    <span>
+                        <h1>›
+                            <hr>
+                        </h1>
+                    </span>
+
+                </div>
+
+                <div class="library-3">
+
+
+
+                    <h3>Workforce devlopment plans</h3>
+
+                    <span>
+                        <h1>›
+                            <hr>
+                        </h1>
+                    </span>
+
+                </div>
+
+                <div class="library-3">
+
+
+
+                    <h3>Source & retain the best talent</h3>
+
+                    <span>
+                        <h1>›
+                            <hr>
+                        </h1>
+                    </span>
+
+                </div>
+
+
+
+
+
+                <div class="labeloginmain">
+                    <div class="labellogin">
+                        <p>💚 Loved by the community.trusted by major orgnization.</p>
+                    </div>
+                </div>
+
+
+
+                <section class="scrol2">
+
+
+
+                    <div class="imges2scroll2">
+
+                        <img src="" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-puma.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-bugcrowd.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-adeptis.svg" alt="">
+
+                        <img src="./css.png" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-the-university-of-sydney.svg"
+                            alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-deloitte.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-context.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nviso.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-google.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-raytheon.svg" alt="">
+
+                        <img src="./css.png" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-adeptis.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nordea.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-the-university-of-sydney.svg"
+                            alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-deloitte.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-context.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nviso.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-google.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-raytheon.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-bugcrowd.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-adeptis.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nordea.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-the-university-of-sydney.svg"
+                            alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-deloitte.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-context.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nviso.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-google.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-raytheon.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-bugcrowd.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-adeptis.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nordea.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-the-university-of-sydney.svg"
+                            alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-deloitte.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-context.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nviso.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-google.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-raytheon.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-bugcrowd.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-adeptis.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nordea.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-the-university-of-sydney.svg"
+                            alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-deloitte.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-context.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nviso.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-google.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-raytheon.svg" alt="">
+
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-toyota.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-puma.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-bugcrowd.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-adeptis.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nordea.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-the-university-of-sydney.svg"
+                            alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-deloitte.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-context.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nviso.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-google.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-raytheon.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-bugcrowd.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-adeptis.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nordea.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-the-university-of-sydney.svg"
+                            alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-deloitte.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-context.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nviso.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-google.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-raytheon.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-bugcrowd.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-adeptis.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nordea.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-the-university-of-sydney.svg"
+                            alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-deloitte.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-context.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nviso.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-google.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-raytheon.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-bugcrowd.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-adeptis.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nordea.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-the-university-of-sydney.svg"
+                            alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-deloitte.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-context.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nviso.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-google.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-raytheon.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-bugcrowd.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-adeptis.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nordea.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-the-university-of-sydney.svg"
+                            alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-deloitte.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-context.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-nviso.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-google.svg" alt="">
+
+                        <img src="https://www.hackthebox.com/images/landingv3/banner-logo-raytheon.svg" alt="">
+
+
+
+
+                    </div>
+
+
+                </section>
+
+                <div class="cardsloginmain">
+
+                    <h1>Recognized cyber leader</h1>
+
+                    <div class="cardslogin">
+                        <div class="cardlogin1">
+                            <p> ↀ</p>
+                            <p>Goes live in less than 30 days</p>
+                        </div>
+                        <div class="cardlogin1">
+                            <p> Œ</p>
+                            <p>Return your investment within 12 months</p>
+                        </div>
+                        <div class="cardlogin1">
+                            <p> ◰</p>
+                            <p>Lead in content realisim 96% satisfaction</p>
+                        </div>
+                    </div>
+                    <img src="https://www.hackthebox.com/images/landingv3/rating.png" alt="">
+                </div>
+
+                <div class="library-2">
+
+                    <div class="library-1">
+
+                        <h3>Services Live</h3>
+
+                        <p>Messageing support or live controllrablre assiustant to user.</p>
+                    </div>
+
+                    <span>
+                        <h1>›
+                            <hr>
+                        </h1>
+                    </span>
+
+                </div>
+                <div class="library-2">
+
+                    <div class="library-1">
+
+                        <h3>University Inquiries</h3>
+
+                        <p>Are you student or proffessor intersted in training with HTB?</p>
+                    </div>
+
+                    <span>
+                        <h1>›
+                            <hr>
+                        </h1>
+                    </span>
+
+                </div>
+                <div class="library-2">
+
+                    <div class="library-1">
+
+                        <h3>Customer Support</h3>
+
+                        <p>For techinical support ,please contact our customer suport team.</p>
+                    </div>
+
+                    <span>
+                        <h1>›
+                            <hr>
+                        </h1>
+                    </span>
+
+                </div>
+
+
+
+                <div class="footer-bottomleft2">
+
+                    <img class="medialogo" src="./icons8-facebook-logo-94.png" alt="">
+                    <img class="medialogo" src="./icons8-instagram-logo-94.png" alt="">
+                    <img class="medialogo" src="./icons8-whatsapp-logo-94.png" alt="">
+                    <img class="medialogo" src="./icons8-x-logo-64.png" alt=""> <img class="medialogo"
+                        src="./icons8-tiktok-50.png" alt="">
+                    <img class="medialogo" src="./icons8-github-logo-94.png" alt="">
+                    <img class="medialogo" src="./icons8-linkedin-50.png" alt="">
+
+                    <img class="medialogo" src="./icons8-rss-48.png" alt="">
+
+                </div>
+            </div>
+
+
+            <div class="rightlogin">
+
+
+                <h1>See HTB in action</h1>
+                <p>Schedule a 30-minute live product demo with expert Q&A</p>
+                <form action="">
+                    <input type="text" required placeholder="Business Email*">
+                    <div class="twoinp">
+                        <input type="text" required placeholder="First name*"><input type="text" required
+                            placeholder="Last name*">
+                    </div>
+                    <div class="twoinp">
+                        <input type="text" required placeholder="Company*"><input type="text" required
+                            placeholder="security / IT team size*">
+                    </div>
+
+                    <select name="country" id="country" required>
+                        <option value="" disabled selected>Department*</option>
+                        <option value="in">Education</option>
+                        <option value="us">Federal</option>
+                        <option value="uk">Office of the cisco</option>
+                        <option value="uk">Read team</option>
+
+                    </select>
+                    <select name="country" id="country" required>
+                        <option value="" disabled selected>Job Level*</option>
+                        <option value="in">Manager</option>
+                        <option value="us">Directer</option>
+                        <option value="uk">HR</option>
+                        <option value="uk">Anylist / engeenier</option>
+
+                    </select>
+                    <select name="country" id="country" required>
+                        <option value="" disabled selected>Select a country</option>
+                        <option value="in">India</option>
+                        <option value="us">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="in">Japan</option>
+                        <option value="us">China</option>
+                        <option value="uk">Korea</option>
+                        <option value="uk">Russia</option>
+                    </select>
+                    <textarea name="I'm looking for help with...*" id=""
+                        placeholder="I'm looking for help with...*"></textarea>
+                    <button type="submit" class="btnlogin"><a href="index.html">SUBMIT</a></button>
+                </form>
+
+                <p>Thise site is protected by reCAPTCHA and Google <a href="./index.html">privacy policy</a>and <a
+                        href="./index.html">Terms of
+                        Service </a>apply.</p>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>

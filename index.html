@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./sec2.css">
+
+    <title>FLOPZILL.com</title>
+</head>
+
+
+<style>
+    .li-hov a {
+
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.607);
+
+    }
+
+    .li-hov:hover a {
+        color: rgb(170, 255, 0);
+    }
+
+    .count2 {
+        width: 100%;
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .count2 img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 3px solid black;
+
+    }
+</style>
+
+
+<!-- reating fixed -->
+<style>
+    .rang {
+        position: absolute;
+        height: 30%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        z-index: 13;
+        right: 0px !important;
+        bottom: 50px;
+    }
+
+
+    input[type="range"] {
+
+        accent-color: rgb(0, 0, 0);
+        background-color: rgb(255, 253, 253);
+        width: 95%;
+
+    }
+
+    .rangx p {
+        color: black;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .rangx {
+        position: fixed;
+        width: 16%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 5vh;
+        align-items: center;
+        font-size: 14px;
+        z-index: 13;
+        right: 97px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        bottom: 0;
+        background-color: rgb(132, 255, 0);
+        overflow: hidden;
+
+    }
+
+    .rangx:hover {
+        cursor: pointer;
+        height: 38vh;
+        transition: 1s linear;
+        transform: translate(-30px, 30px);
+    }
+
+    .symb {
+        font-size: 20px !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-weight: 900;
+    }
+
+    .symb-text {
+        font-size: 12px !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .rangx:hover .symb {
+
+        position: absolute;
+        transform: rotate(180deg);
+        transition: 1s;
+        right: 10px;
+        top: 3px;
+
+    }
+
+    .rangx:hover .symb-text {
+        display: none;
+    }
+
+    .symb-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .count {
+        width: 90%;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .count1 {
+        width: 90%;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        display: flex;
+        gap: 30%;
+        align-items: center;
+
+    }
+</style>
+<!-- reating fixed -->
+<style>
+    .footer-bottomleft i {
+        font-size: 4vh;
+        color: rgba(255, 255, 255, 0.738);
+    }
+
+    .footer-bottomleft i:hover {
+        color: rgb(170, 255, 0);
+        cursor: pointer;
+    }
+
+
+
+    .chat {
+        border-radius: 50%;
+
+
+    }
+
+    .box-chat {
+        background-color: rgba(130, 115, 115, 0);
+        color: rgb(2, 2, 2);
+        font-size: 14px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        width: 100%;
+        height: 43px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px;
+
+
+    }
+
+    .box-chat i {
+        color: rgb(0, 0, 0);
+
+        font-size: 3vh;
+        border-radius: 5px;
+
+    }
+
+
+    .box-chat P {
+        background-color: rgb(206, 206, 202);
+        height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        width: 40%;
+        padding: 10px;
+    }
+
+
+    .chatbox p:hover {
+
+        border: 2px solid black;
+
+    }
+
+    .box-chat img {
+
+
+        width: 30px;
+        height: 30px;
+
+        border-radius: 50%;
+    }
+
+
+    .box-chat2 {
+        background-color: rgba(130, 115, 115, 0);
+        color: rgb(2, 2, 2);
+        font-size: 14px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        width: 100%;
+        height: 43px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px;
+
+
+    }
+
+    .box-chat2 i {
+        color: rgb(0, 0, 0);
+
+        font-size: 3vh;
+        border-radius: 5px;
+
+    }
+
+
+    .box-chat2 P {
+        background-color: rgb(206, 206, 202);
+        height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        width: 30%;
+        padding: 10px;
+    }
+
+
+    .box-chat3 {
+        background-color: rgba(130, 115, 115, 0);
+        color: rgb(2, 2, 2);
+        font-size: 14px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        width: 100%;
+        height: 43px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px;
+
+
+    }
+
+    .box-chat3 i {
+        color: rgb(0, 0, 0);
+
+        font-size: 3vh;
+        border-radius: 5px;
+
+    }
+
+
+    .box-chat3 P {
+        background-color: rgb(206, 206, 202);
+        height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        width: 30%;
+        padding: 10px;
+    }
+
+    .box-chat4 {
+        background-color: rgba(130, 115, 115, 0);
+        color: rgb(2, 2, 2);
+        font-size: 14px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        width: 100%;
+        height: 43px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px;
+
+
+    }
+
+    .box-chat4 i {
+        color: rgb(0, 0, 0);
+
+        font-size: 3vh;
+        border-radius: 5px;
+
+    }
+
+
+    .box-chat4 P {
+        background-color: rgb(206, 206, 202);
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        width: 40%;
+        padding: 10px;
+    }
+
+
+
+    .box-chat5 {
+        background-color: rgba(130, 115, 115, 0);
+        color: rgb(2, 2, 2);
+        font-size: 14px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        width: 100%;
+        height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+
+
+    }
+
+    .box-chat5 i {
+        color: rgb(0, 0, 0);
+
+        font-size: 3vh;
+        border-radius: 5px;
+
+    }
+
+
+    .box-chat5 P {
+
+        background-color: rgb(206, 206, 202);
+        color: rgb(0, 0, 0);
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        width: 30%;
+        padding: 10px;
+    }
+
+    .inpt {
+        position: absolute;
+        width: 100%;
+        padding: 20px;
+        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        bottom: 0;
+    }
+
+    .inpt img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+    .inpt input {
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+
+
+    .msgimg {
+
+        position: fixed;
+        cursor: pointer;
+
+
+    }
+
+    .ih {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: 126px; */
+        height: 8vh;
+        width: 4vw;
+        border-radius: 50%;
+        background-color: rgb(1, 1, 1);
+        position: fixed;
+        cursor: pointer;
+        /* display: none; */
+        bottom: 15px;
+        right: 12px;
+
+    }
+
+    .ih:hover {
+
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0px 0px 1px 6px rgb(0, 0, 0);
+
+    }
+
+
+    .chat:hover .chatbox {
+        cursor: pointer;
+        background-color: rgb(255, 250, 250);
+        height: 80%;
+        border: 1px solid rgb(255, 255, 255);
+        transition: 0.6s;
+        width: 30%;
+
+    }
+
+
+    .chat:hover .msg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        height: 90%;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .chatbox {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 0%;
+        background-color: rgba(255, 255, 255, 0);
+        height: 0%;
+        overflow: hidden;
+        border: 1px solid rgba(243, 243, 243, 0);
+        border-radius: 10px;
+        bottom: 63px;
+        right: 23px;
+        gap: 20px;
+
+    }
+
+    .chatbox-logo {
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 800;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .chatbox-logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .supporter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        gap: 10px;
+    }
+
+    .supporter img {
+        cursor: pointer;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .msg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(136, 20, 20, 0);
+        border-radius: 20px;
+        height: 90%;
+        padding: 10px;
+        width: 100%;
+    }
+
+    body {
+        overflow: hidden;
+        background-color: rgb(28, 29, 56);
+    }
+
+
+
+    .msg p {
+        color: rgb(10, 12, 9);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    .ip {
+        font-size: 13px;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        height: 160%;
+        width: 180%;
+        border: none;
+        background-color: rgba(169, 167, 167, 0);
+        padding: 7px;
+    }
+
+
+    .msg input::placeholder {
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.579);
+    }
+
+    @media screen and (max-width:1400px) and (min-width:1200px) {
+
+        .div3-2 {
+
+            width: 50vw;
+            height: 30vh;
+            border-radius: 10px;
+        }
+    }
+
+
+    @media screen and (max-width:1200px) and (min-width:900px) {
+
+        .mobi-ul.active {
+            width: 100vw;
+            height: 90vh;
+            background-color: #0b121f;
+        }
+
+
+    }
+
+
+
+
+    .logo p {
+        position: absolute;
+        font-size: 30px;
+        color: white;
+
+    }
+
+
+    .drop1 p {
+
+        display: flex;
+        align-items: center;
+
+        gap: 5px;
+
+    }
+
+    .drop2 p {
+
+        display: flex;
+        align-items: center;
+
+        gap: 15px;
+
+    }
+</style>
+
+
+
+
+
+
+
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            <video playsinline="" autoplay="" muted="" loop="">
+                <source src="./Samir Bhoir.mp4" type="video/mp4">
+            </video>
+        </div>
+        <ul class="nav-ul
+">
+            <!-- nav drop down -->
+
+
+            <!-- nav drop down -->
+
+            <div class="li-div">
+                <li class="li-hov"><a href="">Skills</a></li>
+                <div class="drop"> <!-- dropcontent -->
+                    <div class="drop1">
+                        <p
+                            style="color: rgba(255, 255, 255, 0.214); font-size: 14px; font-weight: 400; background-color: transparent;">
+                            Languages </p>
+                        <p> <img style="width: 60px;" src="./html5.png" alt=""> HTML</p>
+                        <p><img style="width: 55px;" src="./css-3 (1).png" alt=""> CSS</p>
+                        <p><img style="width: 50px;" src="./java-script.png" alt=""> java-script</p>
+                        <p> <img style="width: 55px;" src="./library.png" alt=""> React js</p>
+                    </div>
+                    <div class="drop2">
+                        <p
+                            style="color: rgba(255, 255, 255, 0.214); font-size: 14px; font-weight: 400; background-color: transparent;">
+                            What I'am Doing</p>
+                        <p><img style="width: 30px;" src="./icon-design.svg" alt=""> Web Design</p>
+                        <p> <img style="width: 30px;" src="./icon-dev.svg" alt=""> Backend Development</p>
+                        <p> <img style="width: 30px;" src="./icon-dev.svg" alt="">Frontend Development</p>
+                        <p> <img style="width: 30px;"
+                                src="https://yadavrajneeshold.netlify.app/assets/images/icon-app.svg" alt="">Mobile
+                            Friendly Websites</p>
+
+
+
+                    </div>
+                    <div class="drop3">
+                        <p
+                            style="color: rgba(255, 255, 255, 0.214); font-size: 14px; font-weight: 400; background-color: transparent;">
+                            About Me</p>
+                        <!-- <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3Z29naWRhcTJ4OWtvaGFhbHQ4MHd4eWg2YXJqZXl4Y2xseXQxYmRrMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4euEwk32Mohjqh3GXP/giphy.gif"
+                            alt=""> -->
+
+                        <h1 style="font-size: 25px;">Education</h1>
+                        <div class="drop31">
+                            <h1>Bachelor of Science in Information Technology</h1>
+                            <p style="color: rgb(236, 180, 77);">2022 - 2025 </p>
+                            <p>I have completed my Bachelor of Science in Information Technology from JSSP Arts,
+                                Commerce & Science College,Goveli ,Mumbai University </p>
+                        </div>
+                        <div class="drop31">
+                            <h1>Higher Secondary Education</h1>
+                            <p style="color: rgb(242, 180, 66);">2021 - 2022 </p>
+                            <p>I have completed my Higher Secondary Education from NES Commerce & Science
+                                College,Murbad,Mumbai University </p>
+                        </div>
+                        <p class="pd4"><a href=""><u>View all My projects </u>
+
+                            </a></p>
+
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            </div>
+
+
+
+            </div>
+            </div>
+
+        </ul>
+
+        <div class="right-sec">
+
+
+
+            <p class="li-hov"><a href="./login.html"> Contact : 9022340204</a></p>
+            <a class="nav-btn" href="#sec-3"><button style=" border: none;">Projects</button></a>
+
+        </div>
+        </div>
+
+        <div class="hamb" id="hamb" onclick="openmobi()">
+
+            <span id="a"></span>
+            <span id="b"></span>
+            <span id="c"></span>
+
+            <ul class="mobi-ul" id="mobi">
+
+                <li class="li-hov"><a class="li-a" href="#main" style="margin-top: 30px;">Home</a>
+
+                </li>
+
+                <hr>
+                <li class="li-hov"><a class="li-a" href="#scroll">Skills</a></li>
+                <hr>
+
+                 <li class="li-hov"><a class="li-a" href="#card">About me</a></li>
+                <hr>
+
+                 <li class="li-hov"><a class="li-a" href="#sec-3">Projects</a></li>
+                <hr>
+
+            </ul>
+        </div>
+    </nav>
+
+    <section class="main" id="main">
+
+        <div class="head">
+            <div class="h1head">
+                <h1>Mern </h1>
+                <h1 class="h1h1">Stack</h1>
+                <h1 class="h1h1">developer</h1>
+
+            </div>
+
+            <p>My job is to build your website so <br> that it is functional and user-friendly but <br> at the same time
+                attractive
+                to use.</p>
+
+            <div class="headbtn">
+                <button class="btn1" href="#sec-3">My Projects <span>
+                        <hr>
+                    </span></button><button class="btn2">About me</button>
+            </div>
+
+            <div class="linklabel">
+                <label for="New">NEW</label>
+                <p class="label-p">Crafting Code With Purpose Websites </p>
+                <span class="font1">
+                    <hr>
+                </span>
+            </div>
+
+        </div>
+
+        <section class="homepage-video">
+            <video class="bg-video" playsinline="" autoplay="" muted="" loop="">
+                <source src="./portfoliobg.mp4" type="video/mp4">
+
+            </video>
+        </section>
+        <div class="bgcolor">
+
+        </div>
+
+    </section>
+
+    <section class="scrol" >
+
+        <div class="scroll-imgborder1"></div>
+        <div class="scroll-imgborder2"></div>
+
+        <div class="imges2scroll">
+
+
+            <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt="">
+            <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt="">
+
+            <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt="">
+
+            <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt="">
+
+            <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt=""> <img src="./java-script (1).png" alt="">
+
+            <img src="./bootstrapping.png" alt="">
+
+            <img src="./css.png" alt="">
+
+            <img src="./html.png" alt="">
+
+            <img src="./programming-language.png" alt="">
+
+            <img src="./php.png" alt="">
+
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+
+    <section class="sec-2" id="card">
+
+        <div class="sec-2uper">
+
+            <label class="sec-2label" for="">Samir Bhoir</label>
+
+            <div class="sec-2row">
+                <div class="div1-2">
+
+                    <!-- <img src="./pexels-jibarofoto-1759531.jpg" alt=""> -->
+<img src="https://tse4.mm.bing.net/th/id/OIP.zPFODjbeCz-cYVJM9lO0UgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                </div>
+                <div class="div2-2">
+                    <p>
+                        <i class="fa-solid fa-camera-retro"></i> Photographer
+                    </p>
+                    <br>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i> Thane,Kalyan
+                    </p>
+                </div>
+                <div class="div3-2">
+                    <!-- <img src="https://www.hackthebox.com/images/landingv3/mcp-server.jpg" alt=""> -->
+
+                    <button>+ Add</button>
+                    <button>Contact</button>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="btmsec-2">
+
+            <div class="rightsec-2">
+
+                <div class="socialm">
+                    <div class="view">
+
+
+                        <p><i class="fa-solid fa-eye"></i>
+                            Views</p>
+                        <p class="value">600</p>
+
+                    </div>
+                    <div class="view">
+
+
+                        <p><i class="fa-solid fa-user"></i>
+                            Followers</p>
+                        <p class="value">320</p>
+
+                    </div>
+                    <div class="view">
+
+
+                        <p><i class="fa-solid fa-heart"></i>
+                            Likes</p>
+                        <p class="value">654</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="leftsec-2">
+                <div class="h1sec-2">
+                    <p>Samir Bhoir is a passionate and results-driven MERN stack developer.
+                        He specializes in building full-stack web applications using MongoDB, Express.js, React, and
+                        Node.js.
+                        With a strong foundation in JavaScript and modern web technologies, he delivers clean, scalable
+                        code.
+                        Samir enjoys solving complex problems and turning ideas into interactive digital solutions.
+                        He is committed to continuous learning and staying up-to-date with the latest in web
+                        development.</p>
+
+                </div>
+                <button style="cursor: pointer;" onclick="them()"><i class="fas fa-sun brightness-icon"
+                        tabindex="0"></i>Theme</button>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class="sec-3" id="sec-3">
+        <div class="sec-3div">
+            <div class="sec-h3">
+                <h1>Here is my projects which i have Designed </h1>
+                <h1>and devloped from scrach, focusing on funtionility.</h1>
+            </div>
+            <div class="sec-3btn">
+                <button class="btn3">About me </button> <button class="btn2">Visit projects</button>
+            </div>
+
+
+            <div class="cards">
+                <div class="card-1">
+                    <h1>Transform Properties </h1>
+                    <p>Fully guided journeys into a CSS transform properties skills or proficiency in applying in real
+                        time .
+                    </p>
+
+                    <img src="./fas.png" alt="">
+                </div>
+                <div class="card-2">
+                    <h1>Fasta Connect</h1>
+                    <p>Cutting-edge Connectivity focusing on the latest technologies and Connnecting the world with our
+                        platform !
+                    </p>
+                    <img src="./FASTA.png" alt="">
+                </div>
+                <div class="card-3">
+                    <h1> Algohub Industry </h1>
+                    <p>Innovative products and items that will make a market- ready professional out of you a
+                        E-commrece platform !</p>
+
+                    <img src="./port.png" alt="">
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <section class="sec-4">
+        <div class="sec-4div">
+            <div class="sec-h3">
+                <h1>Cyber workforce development plans baked
+                </h1>
+                <h1> into the fabric and objectives of your organization.</h1>
+            </div>
+            <div class="sec-3btn">
+                <button class="btn3">Get a demo </button> <button class="btn2">Start free trail</button>
+            </div>
+
+            <div class="page-4">
+
+                <div class="page-nav">
+
+                    <div class="dot">
+                        <div class="dot-1"></div>
+                        <div class="dot-2"></div>
+                        <div class="dot-3"></div>
+                    </div>
+
+                    <div class="inputbox4">
+                        <p>🔗</p>
+                        <p>HTB
+                            Enterprise Platform | ...</p>
+                        <p style="font-weight: 700;">⭮</p>
+
+                    </div>
+
+                    <div class="options">
+                        <p class="sound">🔊</p>
+                        <p class="soun" style="transform: rotate(-45deg); border-radius: 50%; align-items: center;">⇿
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contentsec-4">
+
+                    <!-- <h1>A preview into HTB workforce development 🛋️</h1>
+
+                    <p>Devlop and messure all aspect of your cyber readiness on single cloud-based platform.</p> -->
+
+
+                    <button class="btn1-4">See it in action</button>
+
+                    <button class="btn1-4">Visite Website</button>
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- <section class="sec-5">
+
+        <div class="sec-4div">
+            <div class="sec-h3">
+                <h1>Clear career path programs and retention
+
+                </h1>
+                <h1> strategies fighting burnout, fatigue, or skill gaps.</h1>
+            </div>
+            <div class="sec-3btn">
+                <button class="btn3">Find a job </button> <button class="btn2">For business</button>
+            </div>
+
+            <div class="contentsec-5">
+
+                <div class="left-div5">
+                    <div class="div5-left1">
+                        <p>Available candidates</p>
+                        <h1>891k+</h1>
+                    </div>
+                    <div class="div5-right1">
+
+                        <p>Onborarding & retention</p>
+                        <h1>
+                            A blueprint for a onboarding cybersecurity and professionas:hire
+                            got the most important &retain !
+                        </h1>
+                    </div>
+
+                    <div class="arrow">
+                        <p>
+                        </p>
+                    </div>
+
+
+
+                </div>
+                <div class="right-div5">
+                    <div class="div5-left2">
+                        <p>Success story</p>
+                        <h1>
+                            From militry operator to head of cyber thread inttelegenc:Gary's story
+                        </h1>
+                    </div>
+                    <div class="div5-right2"><img
+                            src="https://www.hackthebox.com/images/landingv3/gary-ruddell-mobile.png" alt=""></div>
+                    <div class="arrow2">
+                        <p>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="sec-5btm">
+                <p>Companies which i have worked on projects</p>
+
+                <div class="imges">
+
+                    <img src="https://www.hackthebox.com/images/landingv3/security-metrics-logo.svg" alt="">
+                    <img src="https://www.hackthebox.com/images/landingv3/synack-the-white-logo.svg" alt="">
+                    <img src="https://www.hackthebox.com/images/landingv3/lufthansa-logo.svg" alt="">
+                    <img src="https://www.hackthebox.com/images/landingv3/booking-holdings-logo.svg" alt="">
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section> -->
+
+    <section class="textani">
+
+
+        <div class="text">
+            <div class="h1ani">
+                <h1></h1>
+                <h1 id="anitext">Mern Stack Devloper</h1>
+            </div>
+
+            <p>My job is to build your website so that it is functional and user-friendly but at the same time
+                attractive
+                to use.
+
+            </p>
+
+            <button>My Discord</button>
+            <img src="	https://www.hackthebox.com/images/landingv3/rating.png" alt="">
+
+
+
+        </div>
+
+
+    </section>
+    <section class="sec-">
+
+
+
+    </section>
+    <footer id="scroll">
+
+        <section class="foot-sec">
+
+            <div class="foot-left">
+
+                <div class="foothead">
+
+                    <div class="logo2">
+                        <img src="./samir.logo.png" alt="">
+                        <video playsinline="" autoplay="" muted="" loop="">
+
+                        </video>
+                    </div>
+
+
+                </div>
+
+                <p>Designed & Built by Samir Bhoir.
+                    <br><br>
+
+                    <i class="fa-solid fa-envelope"></i> Samir@gmail.com <br>
+                    <i class="fa-brands fa-linkedin"></i> linkedIn | GitHub | Portfolio <br><br>
+                    © 2025 Samir Bhoir . All rights reserved.
+
+
+
+                </p>
+
+            </div>
+
+
+
+
+
+
+
+
+            </div>
+            <div class="foot-right">
+
+
+                <div class="product">
+                    <h1>About</h1>
+
+                    <ul class="pr-ul">
+
+                        <li>Courses & Certifications</li>
+                        <li>Skills</li>
+                        <li>Qualification</li>
+                        <li>My Achivements</li>
+                        <li>Experince</li>
+                        <li>Talent Sourcing</li>
+
+                    </ul>
+
+
+                </div>
+                <div class="solution">
+                    <h1>Projects</h1>
+
+                    <ul class="pr-ul">
+
+                        <li>Flopzilla</li>
+                        <li>Fasta</li>
+                        <li>Car Exotic Men's</li>
+
+                        <li>Algohub</li>
+                        <li>Transform</li>
+                        <li>Cyberworld</li>
+
+
+                    </ul>
+
+
+                </div>
+                <div class="resources">
+                    <h1>Contact</h1>
+
+                    <ul class="pr-ul">
+
+                        <li><i class="fa-solid fa-phone-volume"></i> Tel</li>
+                        <li><i class="fa-brands fa-github"></i> GitHub</li>
+                        <li><i class="fa-brands fa-linkedin"></i> LinkdIn</li>
+                        <li><i class="fa-brands fa-square-x-twitter"></i> X</li>
+                        <li><i class="fa-solid fa-envelope"></i> Email</li>
+
+
+
+
+                    </ul>
+
+
+                </div>
+                <div class="company">
+                    <h1>Skills</h1>
+
+                    <ul class="pr-ul">
+
+                        <li><i class="fa-brands fa-html5"></i> Html</li>
+                        <li> <i class="fa-brands fa-css3-alt"></i> CSS</li>
+                        <li><i class="fa-brands fa-java"></i> Javascript</li>
+                        <li><i class="fa-solid fa-database"></i> My Sql</li>
+                        <li> <i class="fa-brands fa-node-js"></i> Partical js</li>
+                        <li><i class="fa-brands fa-python"></i> Python</li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+            </div>
+
+        </section>
+
+        <div class="footer-bottom">
+
+            <div class="footer-bottomleft">
+
+                <!-- <img class="medialogo" src="./icons8-facebook-logo-94.png" alt="">
+                <img class="medialogo" src="./icons8-instagram-logo-94.png" alt="">
+                <img class="medialogo" src="./icons8-whatsapp-logo-94.png" alt=""> -->
+                <!-- <img src="./icons8-x-logo-64.png" alt=""> -->
+                <i class="fa-brands fa-github"></i><i class="fa-brands fa-linkedin"></i><i
+                    class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-solid fa-envelope"></i> <i class="fa-brands fa-facebook"></i><i
+                    class="fa-brands fa-square-gitlab"></i>
+
+
+                <!-- <img class="medialogo" src="./icons8-github-logo-94.png" alt="">
+                <img class="medialogo" src="./icons8-linkedin-50.png" alt=""> -->
+                <!-- 
+                <img src="./icons8-rss-48.png" alt=""> -->
+
+            </div>
+            <div class="footer-bottomright">
+
+
+                <li> © 2025 Samir Bhoir.All rights reserverd.</li>
+
+            </div>
+
+    </footer>
+    <div class="rang">
+        <div class="rangx">
+            <div class="symb-div">
+                <p class=" symb-text" style="color: black; font-size: 15px;">My GitHub profile card...</p>
+                <p class="symb" style="color: black;">▲</p>
+            </div>
+
+            <div class="count2">
+                <img src="./pexels-juanico-2589653.jpg" alt="">
+
+            </div>
+            <div class="count2">
+                <h2 style="font-family: Arial, Helvetica, sans-serif;">Samir Bhoir</h2>
+
+            </div>
+            <p style="color: black; font-weight: 700;">GitHub mascot - Developer
+            <p>
+
+            <div class="count1">
+                <p>150</p>
+                <p>200</p>
+                <p>50</p>
+
+            </div>
+            <div class="count">
+                <p>Followers</p>
+                <p>Following</p>
+                <p>Repos</p>
+            </div>
+
+        </div>
+        <div class="chat">
+
+            <div class="ih"> <img class="msgimg" src="./icons8-chat-message-50.png" alt=""></div>
+
+            <div class="chatbox">
+
+                <div class="chatbox-logo"><img src="./my-avatar.png" alt="">
+                    <p style="color: rgb(170, 255, 0); font-family:Georgia, 'Times New Roman', Times, serif;">Samir Bhoir
+
+                    </p>
+                </div>
+
+                <div class="box-chat5">
+                    <p>
+                        GET IN TOUCH</p>
+                </div>
+
+                <div class="box-chat">
+
+                    <p><i class="fa-solid fa-envelope"></i>
+                        EMAIL <br>Samir@gmail.com</p>
+                </div>
+
+                <div class="box-chat">
+                    <p><i class="fa-solid fa-phone-volume"></i>
+                        PHONE <br>+91 9022393678</p>
+                </div>
+                <div class="box-chat2">
+                    <p><i class="fa-brands fa-linkedin"></i>
+                        LINKDIN<br>Linkdin</p>
+                </div>
+                <div class="box-chat3">
+                    <p><i class="fa-brands fa-github"></i>
+                        GITHUB<br>Github</p>
+                </div>
+                <div class="box-chat4">
+                    <p><i class="fa-solid fa-location-dot"></i>
+                        LOCATION<br>Mumbai,<br> Maharashtra, India</p>
+                </div>
+
+
+
+                <div class="inpt"><input type="text" placeholder="Choose an option"> <img
+                        src="https://static.vecteezy.com/system/resources/previews/022/178/129/non_2x/send-icon-design-symbol-illustration-isolated-on-white-background-vector.jpg"
+                        alt=""></div>
+
+
+
+
+            </div>
+        </div>
+        <script>
+            function openmobi() {
+
+                const menu = document.getElementById('mobi');
+                menu.classList.toggle('active');
+                const sun = document.getElementById('hamb');
+                sun.classList.toggle('active')
+            }
+
+        </script>
+
+
+        <script>
+            function them() {
+                var body = document.querySelector("#body");
+                if (body) body.classList.toggle("body2");
+
+                var leftsec2 = document.querySelector(".leftsec-2");
+                if (leftsec2) leftsec2.classList.toggle("dark");
+
+                var sec2uper = document.querySelector(".sec-2uper");
+                if (sec2uper) sec2uper.classList.toggle("dark-2uper");
+
+                var rightsec2 = document.querySelector(".rightsec-2");
+                if (rightsec2) rightsec2.classList.toggle("darkrightsec-2");
+            }
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+</body>
+
+</html>
